@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Management</title>
+    <link rel="stylesheet" href="stylefish.css">
+</head>
+<body>
+    <header>
+        <h1>Fisherman Website</h1>
+        <nav>
+            <!-- links -->
+        </nav>
+    </header>
+    <main>
+        <h2>Equipment Inventory</h2>
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>Equipment Name</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+          
+            </tbody>
+        </table>
+        <h2>Maintenance Log</h2>
+        <form id="maintenanceForm">
+            <label for="equipmentName">Equipment Name:</label>
+            <input type="text" id="equipmentName" name="equipmentName" required><br>
+            <label for="maintenanceDate">Maintenance Date:</label>
+            <input type="date" id="maintenanceDate" name="maintenanceDate" required><br>
+            <label for="maintenanceType">Maintenance Type:</label>
+            <input type="text" id="maintenanceType" name="maintenanceType" required><br>
+            <label for="maintenanceCost">Maintenance Cost:</label>
+            <input type="number" id="maintenanceCost" name="maintenanceCost" step="0.01" required><br>
+            <label for="maintenanceNotes">Maintenance Notes:</label>
+            <textarea id="maintenanceNotes" name="maintenanceNotes"></textarea><br>
+            <button type="submit">Add Maintenance</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fisherman Website</p>
+    </footer>
+   
+</body>
+</html>
